@@ -1,0 +1,44 @@
+<head>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <title>Budget</title>
+
+</head>
+<body>
+  <h1 class="center">Budget Planner</h1>
+  <div class="container">
+  <div id="balanceSheet" class="row">
+    <div class="col s6">
+      <input placeholder="enter account balance" id="bankVal"></input>
+      <button class="btn" id="enter_bankVal">Enter</button>
+  </div>
+    <div class="col ">
+    <h2 class="header" id="total"></h2>
+  </div>
+  </div>
+  <div id="billsSheet" class="row">
+    <div>
+      <input id="billName" placeholder="enter name of bill"></input>
+      <input id="billVal" placeholder="enter bill amount"></input>
+      <button class="btn" id="enter_bill">Enter</button>
+    </div>
+    <div>
+      <table class="responsive-table" id="table">
+        <thead>
+          <tr>
+            <th data-field="Name">Bill</th>
+            <th data-field="Amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+</body>
+</html>
